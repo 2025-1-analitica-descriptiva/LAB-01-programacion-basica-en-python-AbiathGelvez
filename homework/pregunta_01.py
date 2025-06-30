@@ -7,8 +7,11 @@ utilizar pandas, numpy o scipy.
 
 def pregunta_01():
     suma = 0
-    with open("data.csv", "r") as archivo:
+    with open("files/input/data.csv", "r") as archivo:
         for linea in archivo:
             partes = linea.strip().split("\t")
             suma += int(partes[1])
     return suma
+
+if __name__ == "__main__":
+    print(pregunta_01())
