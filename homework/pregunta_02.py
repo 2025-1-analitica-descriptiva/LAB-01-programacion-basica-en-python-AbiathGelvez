@@ -7,11 +7,19 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_02():
-    """
-    Retorne la cantidad de registros por cada letra de la primera columna como
-    la lista de tuplas (letra, cantidad), ordendas alfabéticamente.
+    conteo = {}
 
-    Rta/
-    [('A', 8), ('B', 7), ('C', 5), ('D', 6), ('E', 14)]
+    with open("files/input/data.csv", "r") as archivo:
+        for linea in archivo:
+            letra = linea.strip().split("\t")[0]
+            if letra in conteo:
+                conteo[letra] += 1
+            else:
+                conteo[letra] = 1
 
-    """
+    # Convertir a lista de tuplas y ordenar alfabéticamente por la letra
+    resultado = sorted(conteo.items())
+    return resultado
+
+if __name__ == "__main__":
+    print(pregunta_02())
