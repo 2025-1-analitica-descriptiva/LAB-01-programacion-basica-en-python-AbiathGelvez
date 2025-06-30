@@ -15,6 +15,7 @@ def pregunta_08():
             letra = partes[0]
             numero = int(partes[1])
 
+
             if numero not in agrupacion:
                 agrupacion[numero] = set()
             agrupacion[numero].add(letra)

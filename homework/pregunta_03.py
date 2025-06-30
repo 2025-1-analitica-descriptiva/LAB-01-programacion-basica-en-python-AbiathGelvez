@@ -21,3 +21,4 @@ def pregunta_03():
 
     resultado = sorted(suma_por_letra.items())
     return resultado
+

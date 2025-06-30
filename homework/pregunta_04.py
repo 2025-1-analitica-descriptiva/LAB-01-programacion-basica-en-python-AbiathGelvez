@@ -19,6 +19,7 @@ def pregunta_04():
             else:
                 conteo_meses[mes] = 1
 
+
     resultado = sorted(conteo_meses.items())
     return resultado
 

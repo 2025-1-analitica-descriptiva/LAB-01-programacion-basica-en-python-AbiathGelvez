@@ -21,5 +21,4 @@ def pregunta_02():
     resultado = sorted(conteo.items())
     return resultado
 
-if __name__ == "__main__":
-    print(pregunta_02())
+

@@ -22,5 +22,3 @@ def pregunta_07():
     resultado = sorted(agrupacion.items())
     return resultado
 
-
-    """

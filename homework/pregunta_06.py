@@ -28,3 +28,4 @@ def pregunta_06():
         resultado.append((clave, minimo, maximo))
 
     return resultado
+
